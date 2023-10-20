@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h2>{{ the_title }}</h2>
+<form method='POST' action='/process'>
+	<table>
+		<p>Give me some data</p>
+		<tr><td>Data1</td><td><input name='input1' type='TEXT' width='60'></td></tr>
+		<tr><td>Data2</td><td><input name='input2' type='TEXT' value='default_data2'></td></tr>
+	</table>
+	<p>When you're ready, click this button:</p>
+	<p><input value='OMNOMNOM!' type='SUBMIT'></p>
+</form>
+
+{% endblock %}

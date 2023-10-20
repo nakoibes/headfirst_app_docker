@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>{{ the_title }}</h2>
+
+<p>You submitted the following data:</p>
+<table>
+	<tr><td>Input1:</td><td>{{ input1 }}</td></tr>
+	<tr><td>Input2:</td><td>{{ input2 }}</td></tr>
+</table>
+
+<p>Processed Input1 and Input2:</p>
+<h3>{{ the_results }}</h3>
+{% endblock %}

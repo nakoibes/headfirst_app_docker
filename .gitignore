@@ -1,0 +1,6 @@
+app/.env
+database/.env
+.idea
+venv
+database/sql_scripts/dump.sql
+set_make_env.sh

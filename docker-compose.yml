@@ -1,0 +1,23 @@
+version: "3.5"
+services:
+  mysql-headfirst:
+    build: ./database/
+    container_name: mysql_headfirst
+    volumes:
+      - /opt/mysql_headfirst:/var/lib/mysql
+    ports:
+      - "6000:3306"
+    env_file:
+      - database/.env
+    restart: unless-stopped
+  app-headfirst:
+    build: ./app/
+    container_name: app_headfirst
+    volumes:
+      - /home/nakoibes/hearfirst_app_docker/app:/app
+    env_file:
+      - app/.env
+    ports:
+      - 0.0.0.0:5000:5000
+    restart: unless-stopped
+
