@@ -4,7 +4,6 @@ Makefile
 docker-compose.yml
 README.md
 set_make_env.sh
-requirements.txt
 
 app/.env
 app/Dockerfile
